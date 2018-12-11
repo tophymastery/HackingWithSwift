@@ -13,16 +13,4 @@ struct Project: Codable {
     var title: String
     var subtitle: String
     var topics: String
-    
-    var attributeTitle: NSAttributedString {
-        let titleAttributes = [NSAttributedString.Key.font: UIFont.preferredFont(forTextStyle: .headline), NSAttributedString.Key.foregroundColor: UIColor.purple]
-        let subtitleAttributes = [NSAttributedString.Key.font: UIFont.preferredFont(forTextStyle: .subheadline)]
-        
-        let titleString = NSMutableAttributedString(string: "\(title)\n", attributes: titleAttributes)
-        let subtitleString = NSAttributedString(string: subtitle, attributes: subtitleAttributes)
-        
-        titleString.append(subtitleString)
-        
-        return titleString
-    }
 }
