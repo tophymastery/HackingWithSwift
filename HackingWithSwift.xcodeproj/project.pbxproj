@@ -17,6 +17,14 @@
 		519AE16F219479E3001F5CFF /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519AE16E219479E3001F5CFF /* Project.swift */; };
 		519AE17121947AB5001F5CFF /* projects.json in Resources */ = {isa = PBXBuildFile; fileRef = 519AE17021947AB5001F5CFF /* projects.json */; };
 		519AE17321948C5A001F5CFF /* ReadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519AE17221948C5A001F5CFF /* ReadViewController.swift */; };
+		A60C82E421BF9A36008330C3 /* Bundle+Decoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60C82E321BF9A36008330C3 /* Bundle+Decoding.swift */; };
+		A60C82E621BF9BE7008330C3 /* ProjectDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60C82E521BF9BE7008330C3 /* ProjectDataSource.swift */; };
+		A60C82E821BF9E3D008330C3 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60C82E721BF9E3D008330C3 /* DetailView.swift */; };
+		A60C82EA21BF9FEB008330C3 /* NavigatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60C82E921BF9FEB008330C3 /* NavigatorDelegate.swift */; };
+		A60C82EC21BFA0B2008330C3 /* WebViewLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60C82EB21BFA0B2008330C3 /* WebViewLoading.swift */; };
+		A60C82EE21BFA160008330C3 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60C82ED21BFA160008330C3 /* Coordinator.swift */; };
+		A60C82F021BFA1BB008330C3 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60C82EF21BFA1BB008330C3 /* MainCoordinator.swift */; };
+		A60C82F221BFA364008330C3 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60C82F121BFA364008330C3 /* Storyboarded.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +52,14 @@
 		519AE16E219479E3001F5CFF /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
 		519AE17021947AB5001F5CFF /* projects.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = projects.json; sourceTree = "<group>"; };
 		519AE17221948C5A001F5CFF /* ReadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadViewController.swift; sourceTree = "<group>"; };
+		A60C82E321BF9A36008330C3 /* Bundle+Decoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Decoding.swift"; sourceTree = "<group>"; };
+		A60C82E521BF9BE7008330C3 /* ProjectDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDataSource.swift; sourceTree = "<group>"; };
+		A60C82E721BF9E3D008330C3 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		A60C82E921BF9FEB008330C3 /* NavigatorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigatorDelegate.swift; sourceTree = "<group>"; };
+		A60C82EB21BFA0B2008330C3 /* WebViewLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewLoading.swift; sourceTree = "<group>"; };
+		A60C82ED21BFA160008330C3 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		A60C82EF21BFA1BB008330C3 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		A60C82F121BFA364008330C3 /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,13 +104,21 @@
 				519AE14C2194787D001F5CFF /* AppDelegate.swift */,
 				519AE14E2194787D001F5CFF /* ViewController.swift */,
 				519AE16C21947911001F5CFF /* DetailViewController.swift */,
+				A60C82E721BF9E3D008330C3 /* DetailView.swift */,
 				519AE17221948C5A001F5CFF /* ReadViewController.swift */,
+				A60C82E921BF9FEB008330C3 /* NavigatorDelegate.swift */,
+				A60C82EB21BFA0B2008330C3 /* WebViewLoading.swift */,
+				A60C82ED21BFA160008330C3 /* Coordinator.swift */,
+				A60C82EF21BFA1BB008330C3 /* MainCoordinator.swift */,
+				A60C82F121BFA364008330C3 /* Storyboarded.swift */,
 				519AE16E219479E3001F5CFF /* Project.swift */,
 				519AE1502194787D001F5CFF /* Main.storyboard */,
 				519AE1532194787E001F5CFF /* Assets.xcassets */,
 				519AE1552194787E001F5CFF /* LaunchScreen.storyboard */,
 				519AE1582194787E001F5CFF /* Info.plist */,
 				519AE17021947AB5001F5CFF /* projects.json */,
+				A60C82E321BF9A36008330C3 /* Bundle+Decoding.swift */,
+				A60C82E521BF9BE7008330C3 /* ProjectDataSource.swift */,
 			);
 			path = HackingWithSwift;
 			sourceTree = "<group>";
@@ -210,9 +234,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A60C82E621BF9BE7008330C3 /* ProjectDataSource.swift in Sources */,
+				A60C82F021BFA1BB008330C3 /* MainCoordinator.swift in Sources */,
+				A60C82E821BF9E3D008330C3 /* DetailView.swift in Sources */,
 				519AE16D21947911001F5CFF /* DetailViewController.swift in Sources */,
 				519AE14F2194787D001F5CFF /* ViewController.swift in Sources */,
+				A60C82F221BFA364008330C3 /* Storyboarded.swift in Sources */,
+				A60C82E421BF9A36008330C3 /* Bundle+Decoding.swift in Sources */,
 				519AE14D2194787D001F5CFF /* AppDelegate.swift in Sources */,
+				A60C82EE21BFA160008330C3 /* Coordinator.swift in Sources */,
+				A60C82EC21BFA0B2008330C3 /* WebViewLoading.swift in Sources */,
+				A60C82EA21BF9FEB008330C3 /* NavigatorDelegate.swift in Sources */,
 				519AE16F219479E3001F5CFF /* Project.swift in Sources */,
 				519AE17321948C5A001F5CFF /* ReadViewController.swift in Sources */,
 			);
