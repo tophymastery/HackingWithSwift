@@ -8,20 +8,18 @@
 
 import UIKit
 
-open class CollectionArrayDataSource<T, Cell: UICollectionViewCell>: CollectionDataSource<ArrayDataProvider<T>, Cell>
+open class CollectionArrayDataSource<T, Cell: UITableViewCell>: TableViewDataSource<ArrayDataProvider<T>, Cell>
     where Cell: ConfigurableCell, Cell.T == T
 {
-    // MARK: - Lifecycle
-    public convenience init(collectionView: UICollectionView, array: [T]) {
-        self.init(collectionView: collectionView, array: [array])
+    public convenience init(tableView: UITableView, array: [T]) {
+        self.init(tableView: tableView, array: [array])
     }
     
-    public init(collectionView: UICollectionView, array: [[T]]) {
+    public init(tableView: UITableView, array: [[T]]) {
         let provider = ArrayDataProvider(array: array)
-        super.init(collectionView: collectionView, provider: provider)
+        super.init(tableView: tableView, provider: provider)
     }
     
-    // MARK: - Public Methods
     public func item(at indexPath: IndexPath) -> T? {
         return provider.item(at: indexPath)
     }

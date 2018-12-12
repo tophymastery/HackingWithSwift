@@ -1,5 +1,5 @@
 //
-//  CollectionDataProvider.swift
+//  TableViewDataProvider
 //  HackingWithSwift
 //
 //  Created by Akadet on 12/12/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-public protocol CollectionDataProvider {
+public protocol TableViewDataProvider {
     associatedtype T
     
     func numberOfSections() -> Int

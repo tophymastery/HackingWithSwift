@@ -27,10 +27,10 @@
 		A60C82F221BFA364008330C3 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60C82F121BFA364008330C3 /* Storyboarded.swift */; };
 		A6DE4C9721C10A7F0028F2C5 /* ConfigurableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DE4C9621C10A7F0028F2C5 /* ConfigurableCell.swift */; };
 		A6DE4C9921C10A980028F2C5 /* ReusableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DE4C9821C10A980028F2C5 /* ReusableCell.swift */; };
-		A6DE4C9C21C10AF40028F2C5 /* CollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DE4C9B21C10AF40028F2C5 /* CollectionDataSource.swift */; };
+		A6DE4C9C21C10AF40028F2C5 /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DE4C9B21C10AF40028F2C5 /* TableViewDataSource.swift */; };
 		A6DE4C9E21C10B0D0028F2C5 /* ArrayDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DE4C9D21C10B0D0028F2C5 /* ArrayDataProvider.swift */; };
-		A6DE4CA021C10B230028F2C5 /* CollectionArrayDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DE4C9F21C10B230028F2C5 /* CollectionArrayDataSource.swift */; };
-		A6DE4CA221C10B410028F2C5 /* CollectionDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DE4CA121C10B410028F2C5 /* CollectionDataProvider.swift */; };
+		A6DE4CA021C10B230028F2C5 /* TableViewArrayDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DE4C9F21C10B230028F2C5 /* TableViewArrayDataSource.swift */; };
+		A6DE4CA221C10B410028F2C5 /* TableViewDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DE4CA121C10B410028F2C5 /* TableViewDataProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,10 +68,10 @@
 		A60C82F121BFA364008330C3 /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
 		A6DE4C9621C10A7F0028F2C5 /* ConfigurableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurableCell.swift; sourceTree = "<group>"; };
 		A6DE4C9821C10A980028F2C5 /* ReusableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableCell.swift; sourceTree = "<group>"; };
-		A6DE4C9B21C10AF40028F2C5 /* CollectionDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionDataSource.swift; sourceTree = "<group>"; };
+		A6DE4C9B21C10AF40028F2C5 /* TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
 		A6DE4C9D21C10B0D0028F2C5 /* ArrayDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayDataProvider.swift; sourceTree = "<group>"; };
-		A6DE4C9F21C10B230028F2C5 /* CollectionArrayDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionArrayDataSource.swift; sourceTree = "<group>"; };
-		A6DE4CA121C10B410028F2C5 /* CollectionDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionDataProvider.swift; sourceTree = "<group>"; };
+		A6DE4C9F21C10B230028F2C5 /* TableViewArrayDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewArrayDataSource.swift; sourceTree = "<group>"; };
+		A6DE4CA121C10B410028F2C5 /* TableViewDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,8 +113,8 @@
 		519AE14B2194787D001F5CFF /* HackingWithSwift */ = {
 			isa = PBXGroup;
 			children = (
-				A6DE4CA421C10C9A0028F2C5 /* Scenes */,
 				A6DE4CA321C10B7B0028F2C5 /* Core */,
+				A6DE4CA421C10C9A0028F2C5 /* Scenes */,
 				519AE14C2194787D001F5CFF /* AppDelegate.swift */,
 				519AE1502194787D001F5CFF /* Main.storyboard */,
 				519AE1532194787E001F5CFF /* Assets.xcassets */,
@@ -148,9 +148,9 @@
 			isa = PBXGroup;
 			children = (
 				A6DE4C9D21C10B0D0028F2C5 /* ArrayDataProvider.swift */,
-				A6DE4C9B21C10AF40028F2C5 /* CollectionDataSource.swift */,
-				A6DE4CA121C10B410028F2C5 /* CollectionDataProvider.swift */,
-				A6DE4C9F21C10B230028F2C5 /* CollectionArrayDataSource.swift */,
+				A6DE4C9B21C10AF40028F2C5 /* TableViewDataSource.swift */,
+				A6DE4CA121C10B410028F2C5 /* TableViewDataProvider.swift */,
+				A6DE4C9F21C10B230028F2C5 /* TableViewArrayDataSource.swift */,
 			);
 			path = GenericDataSource;
 			sourceTree = "<group>";
@@ -326,12 +326,12 @@
 				A60C82E421BF9A36008330C3 /* Bundle+Decoding.swift in Sources */,
 				519AE14D2194787D001F5CFF /* AppDelegate.swift in Sources */,
 				A60C82EE21BFA160008330C3 /* Coordinator.swift in Sources */,
-				A6DE4CA221C10B410028F2C5 /* CollectionDataProvider.swift in Sources */,
+				A6DE4CA221C10B410028F2C5 /* TableViewDataProvider.swift in Sources */,
 				A60C82EC21BFA0B2008330C3 /* WebViewLoading.swift in Sources */,
 				A6DE4C9E21C10B0D0028F2C5 /* ArrayDataProvider.swift in Sources */,
 				A6DE4C9721C10A7F0028F2C5 /* ConfigurableCell.swift in Sources */,
-				A6DE4C9C21C10AF40028F2C5 /* CollectionDataSource.swift in Sources */,
-				A6DE4CA021C10B230028F2C5 /* CollectionArrayDataSource.swift in Sources */,
+				A6DE4C9C21C10AF40028F2C5 /* TableViewDataSource.swift in Sources */,
+				A6DE4CA021C10B230028F2C5 /* TableViewArrayDataSource.swift in Sources */,
 				A60C82EA21BF9FEB008330C3 /* NavigatorDelegate.swift in Sources */,
 				519AE16F219479E3001F5CFF /* Project.swift in Sources */,
 				519AE17321948C5A001F5CFF /* ReadViewController.swift in Sources */,

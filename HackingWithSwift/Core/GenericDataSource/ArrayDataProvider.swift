@@ -8,16 +8,13 @@
 
 import UIKit
 
-public class ArrayDataProvider<T>: CollectionDataProvider {
-    // MARK: - Internal Properties
+public class ArrayDataProvider<T>: TableViewDataProvider {
     var items: [[T]] = []
     
-    // MARK: - Lifecycle
     init(array: [[T]]) {
         items = array
     }
     
-    // MARK: - CollectionDataProvider
     public func numberOfSections() -> Int {
         return items.count
     }
