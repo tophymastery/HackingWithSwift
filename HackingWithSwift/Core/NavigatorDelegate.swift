@@ -13,15 +13,13 @@ class NavigatorDelegate: NSObject, WKNavigationDelegate {
     let allowedSites = ["apple.com", "hackingwithswift.com"]
     
     func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
-        if let host = navigationAction.request.url?.host {
-            if allowedSites.contains(where: host.contains) {
-                decisionHandler(.allow)
+        guard
+            let host = navigationAction.request.url?.host,
+            allowedSites.contains(where: host.contains) else {
+                decisionHandler(.cancel)
                 return
-            } else {
-                print("Disallowed invalid site: \(host).")
-            }
         }
         
-        decisionHandler(.cancel)
+        decisionHandler(.allow)
     }
 }
