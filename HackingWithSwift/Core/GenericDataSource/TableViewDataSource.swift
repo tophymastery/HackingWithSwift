@@ -8,15 +8,15 @@
 
 import UIKit
 
-public typealias CollectionItemSelectionHandlerType = (IndexPath) -> Void
+public typealias TableViewItemSelectionHandlerType = (IndexPath) -> Void
 
-open class TableViewDataSource<Provider: TableViewDataProvider, Cell: UITableViewCell>:
+open class TableViewDataSource<Provider: TableViewDataProvØider, Cell: UITableViewCell>:
     NSObject,
     UITableViewDataSource,
     UITableViewDelegate
     where Cell: ConfigurableCell, Provider.T == Cell.T
 {
-    public var collectionItemSelectionHandler: CollectionItemSelectionHandlerType?
+    public var tableViewItemSelectionHandler: TableViewItemSelectionHandlerType?
     
     let provider: Provider
     let tableView: UITableView
@@ -52,6 +52,6 @@ open class TableViewDataSource<Provider: TableViewDataProvider, Cell: UITableVie
     }
     
     public func tableView(_ tableView: UITableView, didSelectItemAt indexPath: IndexPath) {
-        collectionItemSelectionHandler?(indexPath)
+        tableViewItemSelectionHandler?(indexPath)
     }
 }
